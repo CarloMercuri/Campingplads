@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Campingplads/Pages/Admin.aspx
+/Campingplads/Pages/Admin.aspx.cs
+/Campingplads/Pages/Admin.aspx.designer.cs
