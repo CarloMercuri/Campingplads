@@ -43,7 +43,7 @@
         <div class="col-8 content">
 
             <h1>Velkommen til Camp Den Blå And</h1>
-            <h3>Hos os finder du alt det du drømmer om når du holder ferie, om det nærvær, hygge og sjove oplevelser eller at kommer helt telt på naturen.</h3>
+            <h3>Hos os finder du alt det du drømmer om når du holder ferie, om det er nærvær, hygge og sjove oplevelser eller at kommer helt telt på naturen.</h3>
            
         </div>
         <div class="col-2"></div>
