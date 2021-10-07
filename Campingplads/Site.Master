@@ -6,65 +6,83 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title>Camp Den Blå And</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/main.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/images/blue_duck.png" />
 
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
+      
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container body-content">
+        <nav class="navbar navbar-expand-sm bg-navcolor navbar-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/Pages/Index.aspx">
+        <img src="/images/blue_duck.png" alt="Blue Duck Logo" style="width:40px;" /> 
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/About.aspx">Om Pladsen</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/Pages/Activities.aspx">Oplevelser</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bestil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pages/Contact.aspx">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
-        </div>
+
+
+
+           <footer>
+               <br />
+               <br />
+               <br />
+               <hr />
+            <div class="row"> 
+                <div class="col-1"></div>
+                
+               
+                <div class="col-2">
+                    
+                        <h6>Du finder os her</h6>
+                    <p>Camp Den Blå And</p>
+                    <p>Jellingvej 57</p>
+                    <p>7182 Bredsten</p>
+                    
+                    
+                </div>
+                <div class="col-2">
+                    <h6>Kontaktinfo</h6>
+                    <p>Telefon: 5615 8888</p>
+                    <p>Email: kontakt@campdba.dk</p>
+                    <p>CVR: DK48594778 </p>
+                </div>
+              
+                <div class="col-4"></div>
+                <div class="col-2"><img src="/images/facebook.jpg" alt="Facebook Logo" style="width:40px;" /> 
+                    <img src="/images/instagram.jpg" alt="Instagram Logo" style="width:40px;" /> 
+                </div>
+                <div class="col-1"></div>
+                </div>
+        </footer>
+
 
     </form>
 </body>

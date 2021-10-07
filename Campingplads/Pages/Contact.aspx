@@ -1,11 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="..\Site.Master" CodeBehind="Activities.aspx.cs" Inherits="Campingplads.Pages.Activities" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="..\Site.Master" CodeBehind="Contact.aspx.cs" Inherits="Campingplads.Pages.Contact" %>
+ 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
 
 
-    <div class="image-header">
-            <img class="image-header" src="../Images/activities_header.jpg" alt="Activities"/>            
+    <div class="image-test">
+            <img class="image-test" src="../Images/camping1.jfif" alt="Activities"/>            
         </div>
     <div class="row">
         <div class="col-2"></div>

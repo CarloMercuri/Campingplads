@@ -10,7 +10,7 @@
 
 namespace Campingplads.Pages
 {
-    public partial class SpotInfo
+    public partial class Offers
     {
 
         /// <summary>

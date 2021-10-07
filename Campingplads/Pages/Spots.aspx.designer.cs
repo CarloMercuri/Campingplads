@@ -11,7 +11,7 @@ namespace Campingplads.Pages
 {
 
 
-    public partial class Activities
+    public partial class Spots
     {
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SpotInfo.aspx.cs" Inherits="Campingplads.Pages.SpotInfo" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Offers.aspx.cs" Inherits="Campingplads.Pages.Offers" %>
 
 <!DOCTYPE html>
 

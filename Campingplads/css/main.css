@@ -4,7 +4,7 @@
 }
 .content{
  
-    margin-top: 5%;
+    margin-top: 2%;
     
     justify-content: center;
     text-align:center;
@@ -21,10 +21,14 @@
     margin: 0;
     padding: 0;
 }
-.image-test {
+.image-header {
     width: 100%;
     margin: 0;
     padding: 0;
+    --bs-gutter-x: 0;
+}
+.center-content {
+
 }
 
 .button-style {
@@ -34,4 +38,7 @@
 .order-buttons{
     justify-content: center;
     text-align: center;
+}
+p{
+    font-size: 10px;
 }
