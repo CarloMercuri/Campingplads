@@ -177,6 +177,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataControl\Constants.cs" />
     <Compile Include="DataControl\DatabaseInterface.cs" />
     <Compile Include="DataControl\SQLCommandParameter.cs" />
     <Compile Include="Default.aspx.cs">

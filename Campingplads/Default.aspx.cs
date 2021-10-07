@@ -14,16 +14,12 @@ namespace Campingplads
         DatabaseInterface dbInterface;
         protected void Page_Load(object sender, EventArgs e)
         {
-            dbInterface = new DatabaseInterface();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("click");
+            
         }
 
         protected void btnClick(object sender, EventArgs e)
         {
+            Label1.Text = "suck it";
             //List<CampingSpotTypeInformation> list = dbInterface.GetAvaibleSpotTypesInDates(new DateTime(2021, 11, 03), new DateTime(2021, 11, 15));
 
             //foreach(CampingSpotTypeInformation m in list)

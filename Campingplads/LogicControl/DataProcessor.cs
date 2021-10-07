@@ -6,20 +6,14 @@ using System.Web;
 
 namespace Campingplads.LogicControl
 {
-    public class DataProcessor
+    public static class DataProcessor
     {
-        private DatabaseInterface _dbInterface;
+        private static DatabaseInterface _dbInterface = new DatabaseInterface("local");
 
-        public DataProcessor()
-        {
-            _dbInterface = new DatabaseInterface();
-        }
-
-        public CampingSpotTypeInformation GetSpotTypeInformation(int spotType)
+        public static CampingSpotTypeInformation GetSpotTypeInformation(int spotType)
         {
             return _dbInterface.GetCampingSpotTypeInformation(spotType);
         }
-
 
     }
 

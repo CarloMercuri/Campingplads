@@ -9,7 +9,30 @@ namespace Campingplads.DataControl
 {
     public class DatabaseInterface
     {
-        private string connectionString = "Server=localhost;Database=Camping;User Id=sa;Password=Passw0rd;Trusted_Connection=true";
+        private string connectionString;
+
+        /// <summary>
+        /// Instantiates a DatabaseInterface with the desired database type. "local", "esxi"
+        /// </summary>
+        /// <param name="dbLocation"></param>
+        public DatabaseInterface(string dbLocation)
+        {
+            // Grab the correct connection string based on the requested type of interface
+
+            switch (dbLocation)
+            {
+                case "local":
+                    connectionString = Constants.GetLocalConnectionString();
+                    break;
+
+                case "esxi":
+                    connectionString = Constants.GetEsxiConnectionString();
+                    break;
+
+                default:
+                    break;
+            }
+        }
 
         private void DeveloperCtrlC()
         {
