@@ -112,8 +112,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="css\main.css" />
     <Content Include="Default.aspx" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -125,7 +125,35 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    
+    <Content Include="Images\activities_header.jpg" />
+    <Content Include="Images\blue_duck.png" />
+    <Content Include="Images\camping1.jfif" />
+    <Content Include="Images\campingvogn_final.png" />
+    <Content Include="Images\camping_main_page.jpg" />
+    <Content Include="Images\camping_main_page1.jpg" />
+    <Content Include="Images\camping_main_page2.jpg" />
+    <Content Include="Images\camping_main_page3.jpg" />
+    <Content Include="Images\camping_tent1.jfif" />
+    <Content Include="Images\dato_final.png" />
+    <Content Include="Images\facebook.jpg" />
+    <Content Include="Images\hytte_final.png" />
+    <Content Include="Images\instagram.jpg" />
+    <Content Include="Images\luxury_cabin.jpg" />
+    <Content Include="Images\oplevelser_final.png" />
+    <Content Include="Images\regular_cabin.png" />
+    <Content Include="Images\tent_final.png" />
+    <Content Include="Images\tilbud_final.png" />
+    <Content Include="Images\waterpark.jpg" />
+    <Content Include="Pages\About.aspx" />
+    <Content Include="Pages\Activities.aspx" />
+    <Content Include="Pages\Contact.aspx" />
+    <Content Include="Pages\Index.aspx" />
+    <Content Include="Pages\Offers.aspx" />
+    <Content Include="Pages\Spots.aspx" />
+
     <Content Include="Pages\Admin.aspx" />
+
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -190,6 +218,49 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+
+    <Compile Include="Pages\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Activities.aspx.cs">
+      <DependentUpon>Activities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Activities.aspx.designer.cs">
+      <DependentUpon>Activities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Offers.aspx.cs">
+      <DependentUpon>Offers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Offers.aspx.designer.cs">
+      <DependentUpon>Offers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Spots.aspx.cs">
+      <DependentUpon>Spots.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Spots.aspx.designer.cs">
+      <DependentUpon>Spots.aspx</DependentUpon>
+
     <Compile Include="LogicControl\DataProcessor.cs" />
     <Compile Include="Models\CampingSpotTypeInformation.cs" />
     <Compile Include="Models\Reservation.cs" />
@@ -200,6 +271,7 @@
     </Compile>
     <Compile Include="Pages\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
