@@ -15,7 +15,7 @@ namespace Campingplads.Pages
             OrderButtonCabin.ImageUrl = "~/Images/hytte_final.png";
             OrderButtonTent.ImageUrl = "~/Images/tent_final.png";
             OrderButtonWagon.ImageUrl = "~/Images/campingvogn_final.png";
-            ButtonAdventure.ImageUrl = "~/Images/oplevelser_final.png";
+            ButtonActivities.ImageUrl = "~/Images/oplevelser_final.png";
             OrderButton.ImageUrl = "~/Images/dato_final.png";
             OrderButtonOffer.ImageUrl = "~/Images/tilbud_final.png";
         }
@@ -40,9 +40,18 @@ namespace Campingplads.Pages
                     break;
 
             }
-            Response.Redirect("SpotInfo.aspx?Type=" + parameter);
+            Response.Redirect("Spots.aspx?Type=" + parameter);
 
 
+        }
+        protected void ActivitesButtonClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Activities.aspx");
+        }
+
+        protected void OfferButtonClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Offers.aspx");
         }
     }
 }
